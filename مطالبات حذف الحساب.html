@@ -1,0 +1,234 @@
+<html><head><base href="." /><meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>سياسة حذف الحساب | مطلوب</title><style>
+/* CSS Reset & Fonts */
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #2196f3;
+  --dark: #1976d2;
+  --light: #bbdefb;
+  --gray: #757575;
+  --background: #fafafa;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.6;
+  direction: rtl;
+  background: var(--background);
+  color: #333;
+}
+
+/* Header Styles */
+.header {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Section Styles */
+.section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* Steps List */
+.steps {
+  list-style-position: inside;
+  margin-bottom: 1.5rem;
+}
+
+.steps li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: var(--background);
+  border-radius: 4px;
+}
+
+/* Table Styles */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.data-table th,
+.data-table td {
+  padding: 1rem;
+  border: 1px solid var(--light);
+  text-align: right;
+}
+
+.data-table th {
+  background: var(--primary);
+  color: white;
+}
+
+.data-table tr:nth-child(even) {
+  background: var(--background);
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  color: var(--gray);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--light);
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+button:hover {
+  background: var(--dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .section {
+    padding: 1rem;
+  }
+  
+  .data-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+</style></head><body>
+<header class="header">
+  <svg class="logo" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="45" fill="#2196f3"/>
+    <text x="50" y="50" text-anchor="middle" dy=".3em" fill="white" font-size="40">مطلوب</text>
+  </svg>
+  <h1>سياسة حذف الحساب</h1>
+</header>
+
+<main class="container">
+  <section class="section">
+    <h2>سياسة حذف الحساب</h2>
+    <p>نحن في تطبيق مطلوب نلتزم التزاماً كاملاً بحماية خصوصية مستخدمينا وحقوقهم. نؤكد لكم أننا سنقوم بحذف جميع بياناتكم ومعلوماتكم بشكل كامل ونهائي من أنظمتنا عند طلبكم ذلك. للمضي قدماً في عملية حذف حسابكم، كل ما عليكم فعله هو إرسال رسالة إلى البريد الإلكتروني الموضح في نموذج الاتصال أدناه، وسنقوم بمعالجة طلبكم في أقرب وقت ممكن.</p>
+  </section>
+
+  <section class="section">
+    <h2>معلومات البيانات</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>نوع البيانات</th>
+          <th>يتم حذفها؟</th>
+          <th>فترة الاحتفاظ</th>
+          <th>سبب الاحتفاظ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>اسم المستخدم</td>
+          <td>نعم</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>البريد الإلكتروني</td>
+          <td>نعم</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>اتصل بنا</h2>
+    <form class="contact-form" id="contactForm" action="mailto:alqamra002@gmail.com" method="POST" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">الاسم</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">الرسالة</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+</main>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value
+  };
+  
+  const mailtoLink = `mailto:alqamra002@gmail.com?subject=رسالة من ${formData.name}&body=${encodeURIComponent(formData.message)}%0A%0AFrom: ${formData.email}`;
+  window.location.href = mailtoLink;
+  
+  alert('سيتم فتح تطبيق البريد الإلكتروني لإرسال رسالتك.');
+  
+  this.reset();
+});
+</script>
+</body></html>
